@@ -3,9 +3,9 @@ const path = require('path');
 module.exports = {
   entry: {
     photos: path.join(__dirname, '../mike-photo-carousel/client/src/index.jsx'),
-    relatedProducts: path.join(__dirname, '../garrett-related-products/client/RelatedProducts.jsx'),
-    itemSummary: path.join(__dirname, '../matt-item-summary/client/src/index.jsx'),
-    reviews: path.join(__dirname, '../Review-component/client/index.jsx')
+    // relatedProducts: path.join(__dirname, '../garrett-related-products/client/RelatedProducts.jsx'),
+    // itemSummary: path.join(__dirname, '../matt-item-summary/client/src/index.jsx'),
+    // reviews: path.join(__dirname, '../Review-component/client/index.jsx')
   },
   output: {
     filename: '[name].bundle.js',
