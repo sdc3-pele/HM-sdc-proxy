@@ -1,0 +1,10 @@
+version: '3'
+services:
+  wawa-proxy:
+    build:
+      context: .
+    image: wawa-proxy:latest
+    container_name: wawa-proxy
+    ports:
+    - "8000:8000"
+
