@@ -1,2 +1,4 @@
 node_modules
 *.bundle.js
+newrelic.js
+newrelic_agent.log
