@@ -12,17 +12,17 @@ const photos = 'http://localhost:3001';
 //const reviews = 'http://localhost:3004';
 
 
+//LEADER.IO Authenticator
+// app.get('',() => {
+//   res.send('');
+// })
+
 app.use('/:id', express.static('./public'));
-
-// app.all('/api/photos/:id', (req, res) => {
-//   console.log('Connected to Photos!');
-//   proxy.web(req, res, { target: photos })
-// });
-
 
 app.get('/api/photos/:id', (req, res) => {
   const { id } = req.params;
-  fetch(`http://127.0.0.1:3001/api/photos/${id}`)
+  //fetch(`http://127.0.0.1:3001/api/photos/${id}`)
+  fetch(`http://ec2-13-59-202-236.us-east-2.compute.amazonaws.com:3001/api/photos/${id}`)
     .then(fres => fres.json())
     .then(fres =>  {
       res.status(200).send(fres);
@@ -37,7 +37,8 @@ app.get('/api/photos/:id', (req, res) => {
 app.post('/api/photos', (req, res) => {
   //console.log('post');
   const value = req.query.val;
-  fetch(`http://127.0.0.1:3001/api/photos/?val=${value}`,{method: 'POST'})
+  //fetch(`http://127.0.0.1:3001/api/photos/?val=${value}`,{method: 'POST'})
+  fetch(`http://ec2-13-59-202-236.us-east-2.compute.amazonaws.com:3001/api/photos/?val=${value}`,{method: 'POST'})
     //.then(fres => fres.json())
     .then(() =>  {
       res.status(200).end();
