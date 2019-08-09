@@ -34,7 +34,7 @@ body{
   position: sticky;
   /* -webkit-transform: translateZ(0) */
   top: 0%;
-  background-image: url('https://feclululemonpics.s3.us-east-2.amazonaws.com/FEC/Screen+Shot+2019-07-18+at+8.11.18+PM.png');
+  /* background-image: url('https://feclululemonpics.s3.us-east-2.amazonaws.com/FEC/Screen+Shot+2019-07-18+at+8.11.18+PM.png'); */
   height: 150px;
   width: 100%;
   background-position: center;
