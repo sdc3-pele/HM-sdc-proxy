@@ -21,7 +21,7 @@
   "homepage": "https://github.com/fec3-galadriel/mike-proxy#readme",
   "dependencies": {
     "express": "^4.17.1",
-    "http-proxy": "^1.17.0",
+    "http-proxy": "^1.18.1",
     "newrelic": "^5.11.0",
     "node-fetch": "^2.6.0",
     "react": "^16.8.6",
